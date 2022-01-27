@@ -1,0 +1,31 @@
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+td{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: center;
+    font-family: monospace;
+    font-size: 10px;    
+    position: relative;
+}
+
+td#showColors{
+    width: 4px;
+    height: 4px;
+    border: 0px;
+}
+
+#firePosition{
+    font-size: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    color: gray;
+}
+
+

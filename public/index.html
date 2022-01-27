@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<table id="fireTable"></table>
+		<script type="module">
+			import createFire from './createFire.js'
+			import renderFire from './renderFire.js'
+			import lightFire from './fire.js'
+			
+			const fireArray = [];
+			const fireWidth = 40;
+			const fireHeight = 40;
+
+			const lightFireVar = lightFire(fireArray, fireWidth, fireHeight)
+			const firePropagation = lightFireVar.firePropagation
+
+			createFire(fireArray, fireWidth, fireHeight);
+			lightFire(fireArray, fireWidth, fireHeight);
+			renderFire(fireArray, fireWidth, fireHeight);
+			setInterval(firePropagation, 50)
+		</script>
+	</body>
+</html>
