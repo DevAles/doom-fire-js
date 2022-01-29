@@ -6,17 +6,25 @@
 	<body>
 		<table id="fireTable"></table>
 		<script type="module">
+			//import javascript codes using modules
+			//importa códigos javascript usando módulos
 			import createFire from './createFire.js'
 			import renderFire from './renderFire.js'
 			import lightFire from './fire.js'
 			
+			//define a array with all fire positions and width and height of fire
+			//define um array com todas as posições do fogo e a altura e largura do fogo
 			const fireArray = [];
 			const fireWidth = 40;
 			const fireHeight = 40;
 
+			//declare variables to store functions with parameters or factory functions
+			//declara variáveis para guardar funções com parâmetros ou funções factory
 			const lightFireVar = lightFire(fireArray, fireWidth, fireHeight)
 			const firePropagation = lightFireVar.firePropagation
 
+			//functions to make and render the fire
+			//funções para fazer e renderizar o fogo
 			createFire(fireArray, fireWidth, fireHeight);
 			lightFire(fireArray, fireWidth, fireHeight);
 			renderFire(fireArray, fireWidth, fireHeight);
