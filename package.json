@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/DevAles/doom-fire-js#readme",
   "devDependencies": {
-    "express": "^4.17.2",
     "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
   }
 }
